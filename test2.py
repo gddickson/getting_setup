@@ -5,9 +5,9 @@ from selenium.webdriver.common.alert import Alert
 driver = webdriver.Chrome('c:\\pf\\bin\\chromedriver.exe')  
 # Optional argument, if not specified will search path.
 #driver = webdriver.Chrome()
-driver.get('file://C:/work/getting-setup/simple_page.html')
+driver.get('file://C:/work/getting-setup/file1.html')
 input_field = driver.find_element_by_id("message")
-input_field.send_keys("help me!")
+input_field.send_keys("george")
 submitBtn = driver.find_element_by_id("submit-button")
 time.sleep(2) # Let the user actually see something!
 
