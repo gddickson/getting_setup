@@ -53,10 +53,13 @@ def test_4():
     driver.find_element_by_id("bbc").click()
     assert(driver.title == 'Home - BBC News')
 
-
 def test_5():
     print("Test 5 -Verify you have moved away and are at the QA site")
     driver.get('file://C:/work/getting-setup/file2.html')
+    driver.find_element_by_id("bbc").click()
+    #assert(driver.title == 'Home - BBC News')
+    driver.get('file://C:/work/getting-setup/file2.html')
     driver.find_element_by_id("qa").click()
-    assert(driver.title == 'QA – the UK’s leading tech skills organisation | Tech training | Apprenticeships')
+    #print(driver.title)
+    assert(driver.title == 'QA – the UK’s leading tech skills organisation | Tech training online | Apprenticeships')
 
